@@ -1,6 +1,15 @@
 .dashboardDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
     background-color: #2e3354;
     margin: 10px;
     border: aqua 2px solid;
     border-radius: 10px;
+
+    min-height: 126px;
 }

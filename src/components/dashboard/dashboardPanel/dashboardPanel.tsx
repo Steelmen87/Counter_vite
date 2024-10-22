@@ -4,12 +4,13 @@ import s from './styled.module.css'
 
 type propsType = {
     keyboard: { name: string, callBack: () => void }[]
+    children: React.ReactNode
 }
-export const DashboardPanel = ({keyboard}: propsType) => {
+export const DashboardPanel = ({keyboard,children}: propsType) => {
     return (
         <div className={s.dashboardPanel}>
-            <DashboardDisplay/>
-            <Keyboard keyboard={keyboard}/>
+            <DashboardDisplay children={children}/>
+            <Keyboard keyboard={keyboard} />
         </div>
     );
 };

@@ -4,9 +4,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    width: 400px;
-    height: 240px;
-    border:1px solid white;
+    width: 440px;
+    height: 280px;
 }
 
 .dashboardKeyboard{

@@ -1,8 +1,11 @@
 import s from './styled.module.css'
-export const DashboardDisplay = () => {
+type Props={
+    children: React.ReactNode
+}
+export const DashboardDisplay = ({children}:Props) => {
     return (
         <div className={s.dashboardDisplay}>
-            DashboardDisplay
+            {children}
         </div>
     );
 };

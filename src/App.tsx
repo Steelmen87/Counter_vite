@@ -3,26 +3,36 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {Dashboard} from './components/dashboard/dashboard'
 import s from './styled.module.css'
+import {Input} from './components/input/input'
+import {DivDisplay} from './components/divDisplay/divDisplay'
+import {useState} from 'react'
 
 type keyboardArrayType = {
     keyboard: { name: string, callBack: () => void }[]
 }
 
 function App() {
+    const [value, setValue] = useState(0)
+    const [maxValue, setMaxValue] = useState(0)
+    const [startValue, setStartValue] = useState(0)
     const keyboardArray: keyboardArrayType = {
         keyboard: [
             {
                 callBack: () => {
-                }, name: 'Ok'
-            },
-            {
-                callBack: () => {
-                }, name: 'Cancel'
-            },
-            {
-                callBack: () => {
                 }, name: 'Set'
             },
+        ]
+    }
+    const key: keyboardArrayType = {
+        keyboard: [
+            {
+                callBack: () => {
+                }, name: 'inc'
+            },
+            {
+                callBack: () => {
+                }, name: 'reset'
+            }
         ]
     }
     return (
@@ -36,7 +46,11 @@ function App() {
                 </a>
             </div>
             <div className={s.panel}>
-                <Dashboard keyboard={keyboardArray.keyboard}/>
+                <Dashboard keyboard={keyboardArray.keyboard}>
+                    <Input value={maxValue} name={'max value'} onChange={(e) => setMaxValue(Number(e))}/>
+                    <Input value={startValue} name={'start value'} onChange={(e) => setStartValue(Number(e))}/>
+                </Dashboard>
+                <Dashboard keyboard={key.keyboard} children={<DivDisplay value={value}/>}/>
             </div>
         </>
     )

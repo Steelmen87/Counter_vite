@@ -1,0 +1,19 @@
+.textValue {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    color: aqua;
+    margin: 10px 0;
+
+    input {
+        border-radius: 7px;
+        font-weight: bold;
+        font-size: 14px;
+
+        color: black;
+        padding-left: 7px;
+    }
+
+}
