@@ -1,0 +1,12 @@
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+    height: 340px;
+    background-color: #2e3354;
+    margin: 20px;
+    border: aqua 2px solid;
+    border-radius: 10px;
+}

@@ -1,0 +1,10 @@
+.keyboard{
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #2e3354;
+    padding: 10px;
+    margin: 10px;
+    border: aqua 2px solid;
+    border-radius: 10px;
+}

@@ -1,0 +1,17 @@
+.dashboardPanel{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 400px;
+    height: 240px;
+    border:1px solid white;
+}
+
+.dashboardKeyboard{
+    background-color: #2e3354;
+    margin: 10px;
+    border: aqua 2px solid;
+    border-radius: 10px;
+}
