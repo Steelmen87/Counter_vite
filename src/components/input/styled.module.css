@@ -13,7 +13,16 @@
         font-size: 14px;
 
         color: black;
-        padding-left: 7px;
+        text-align: center;
+        width: 120px;
+        height: 28px;
+
+
     }
 
+
+}
+.disabled{
+    border: 2px red solid;
+    background-color: #c2c0c0;
 }

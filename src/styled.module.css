@@ -1,5 +1,6 @@
 .panel {
     display: flex;
+    flex-wrap: wrap;
     place-items: center;
     min-width: 320px;
     min-height: 60vh;

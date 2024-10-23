@@ -33,8 +33,8 @@
     background-color: #808080;
 }
 .btn:disabled {
-    background-color: #eee;
-    border-color: #eee;
+    background-color: #b9b9b9;
+    border-color: #bebebe;
     color: #444;
     cursor: not-allowed;
 }
