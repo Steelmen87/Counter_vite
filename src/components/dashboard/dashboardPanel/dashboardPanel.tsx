@@ -3,7 +3,11 @@ import {Keyboard} from '../../keyboard/keyboard';
 import s from './styled.module.css'
 
 type propsType = {
-    keyboard: { name: string, callBack: () => void }[]
+    keyboard: {
+        name: string
+        callBack: () => void
+        disabled: boolean
+    }[]
     children: React.ReactNode
 }
 export const DashboardPanel = ({keyboard,children}: propsType) => {

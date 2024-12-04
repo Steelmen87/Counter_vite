@@ -2,7 +2,11 @@ import {DashboardPanel} from './dashboardPanel/dashboardPanel';
 import s from './styled.module.css'
 
 type propsType = {
-    keyboard: { name: string, callBack: () => void }[]
+    keyboard: {
+        name: string
+        callBack: () => void
+        disabled: boolean
+    }[]
     children: React.ReactNode
 }
 
